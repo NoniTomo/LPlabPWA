@@ -194,8 +194,8 @@ window.addEventListener("beforeinstallprompt", (e) => {
   });
 });
 
-const addNewPassword1 = document.querySelector("#add-passwor-button-1");
-const addNewPassword2 = document.querySelector("#add-passwor-button-2");
+const addNewPassword1 = document.querySelector("#add-password-button-1");
+const addNewPassword2 = document.querySelector("#add-password-button-2");
 
 addNewPassword1.addEventListener("click", (e) => {
   openModal("Добавить новый пароль");
