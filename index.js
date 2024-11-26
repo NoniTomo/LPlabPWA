@@ -1,5 +1,3 @@
-"use strict";
-
 if (typeof navigator.serviceWorker !== "undefined") {
   navigator.serviceWorker
     .register("/sw.js")
@@ -30,7 +28,7 @@ const setPasswordModalContent = (header, url, login, password) => `
         <div class="row">
           <input id="password-input" name="password" value="${password ?? ""}"/>
           <button type="button" class="header__button_desktop password_button" id="generate-password">
-            <img src="public/pencil.svg" alt="edit password" />
+            <img src="public/refresh.svg" alt="edit password" />
           </button>
         </div>
       </div>
