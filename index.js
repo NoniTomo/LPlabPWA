@@ -31,13 +31,15 @@ const setPasswordModalContent = (header, url, login, password) => `
       <div class="form__text-field">
         <label for="password">password</label>
         <div class="row">
-          <input id="password-input" name="password" value="${password ?? ""}"/>
-          <button type="button" class="header__button_desktop password_button" id="generate-password">
+          <input class="form__password-input" id="password-input" name="password" value="${
+            password ?? ""
+          }"/>
+          <button type="button"class="form__password-button" id="generate-password">
             <img src="${refreshIcon}" />
           </button>
         </div>
       </div>
-      <button class="header__button_desktop" type="submit">
+      <button class="password-input__submit" type="submit">
         Сохранить
       </button>
     </form>
@@ -195,12 +197,12 @@ window.addEventListener("beforeinstallprompt", (e) => {
 });
 
 const addNewPassword1 = document.querySelector("#add-password-button-1");
-const addNewPassword2 = document.querySelector("#add-password-button-2");
 
 addNewPassword1.addEventListener("click", (e) => {
   openModal("Добавить новый пароль");
 });
 
+const addNewPassword2 = document.querySelector("#add-password-button-2");
 addNewPassword2.addEventListener("click", (e) => {
   openModal("Добавить новый пароль");
 });
