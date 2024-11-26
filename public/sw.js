@@ -1,8 +1,10 @@
+const CACHE_NAME = "passman";
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
-      const cache = await caches.open("passman");
-      cache.addAll(["/"]);
+      const cache = await caches.open(CACHE_NAME);
+      cache.addAll(["/", "assets/index.css", "assets/index.js"]);
     })()
   );
 });
