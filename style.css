@@ -234,3 +234,7 @@
   filter: invert(99%) sepia(77%) saturate(0%) hue-rotate(219deg)
     brightness(109%) contrast(100%);
 }
+
+input {
+  color: black;
+}
