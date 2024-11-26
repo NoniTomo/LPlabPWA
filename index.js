@@ -219,8 +219,6 @@ const renderPasswords = () => {
 
   passwordList.innerHTML = "";
   passwords.map((password, index) => {
-    INPUT_IDS.map((id) => console.log(password[id]));
-
     passwordList.insertAdjacentHTML(
       "beforeend",
       setCardPasswordTemplate(
@@ -268,7 +266,6 @@ const renderPasswords = () => {
 renderPasswords();
 
 const addNewPassword1 = document.querySelector("#add-password-button-1");
-
 addNewPassword1.addEventListener("click", (e) => {
   openModal("Добавить новый пароль");
 });
