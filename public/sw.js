@@ -1,19 +1,19 @@
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches
-      .open("passman")
+      .open("")
       .then((cache) =>
         cache.addAll([
-          "/passman/",
-          "/passman/index.html",
-          "/passman/index.js",
-          "/passman/style.css",
-          "/passman/reset.css",
-          "/passman/public/key.svg",
-          "/passman/public/refresh.svg",
-          "/passman/public/rounded-x.svg",
-          "/passman/public/pencil.svg",
-          "/passman/public/plus.svg",
+          "/",
+          "/index.html",
+          "/index.js",
+          "/style.css",
+          "/reset.css",
+          "/public/key.svg",
+          "/public/refresh.svg",
+          "/public/rounded-x.svg",
+          "/public/pencil.svg",
+          "/public/plus.svg",
         ])
       )
   );
