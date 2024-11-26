@@ -1,22 +1,5 @@
 self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches
-      .open("passman")
-      .then((cache) =>
-        cache.addAll([
-          "/",
-          "/index.html",
-          "/index.js",
-          "/style.css",
-          "/reset.css",
-          "/public/key.svg",
-          "/public/refresh.svg",
-          "/public/rounded-x.svg",
-          "/public/pencil.svg",
-          "/public/plus.svg",
-        ])
-      )
-  );
+  e.waitUntil(caches.open("passman").then((cache) => cache.addAll(["/"])));
 });
 
 self.addEventListener("fetch", (e) => {
