@@ -2,6 +2,7 @@
 
 * {
   font-family: "Inter", "sans-serid";
+  color: azure;
 }
 
 .header {
@@ -21,11 +22,9 @@
 
 .header__title {
   font-size: 20px;
-  color: azure;
 }
 
 .header__button {
-  color: azure;
   border: none;
 }
 
@@ -74,8 +73,10 @@
   background-color: #595b82;
   display: flex;
   padding-block: 0.5rem;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 0.5rem;
+  gap: 10px;
 }
 
 .main {
@@ -111,14 +112,12 @@
 }
 
 .password-item__element {
-  color: azure;
   font-size: 14px;
   font-weight: 300;
   overflow: hidden;
 }
 
 .password-list__title {
-  color: azure;
   font-size: 16px;
   font-weight: 500;
 }
@@ -133,8 +132,6 @@
 
 .password-item__button {
   background: none;
-  filter: invert(99%) sepia(77%) saturate(0%) hue-rotate(219deg)
-    brightness(109%) contrast(100%);
   border: none;
   height: 2rem;
   width: 2rem;
@@ -206,14 +203,34 @@
 }
 
 .form__password-button {
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #595b82;
-  width: 20%;
+  height: 1.5rem;
 }
 
 .form__password-input {
   width: 80%;
+}
+
+.menu {
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 100;
+}
+
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #4d4f71;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.icon {
+  filter: invert(99%) sepia(77%) saturate(0%) hue-rotate(219deg)
+    brightness(109%) contrast(100%);
 }
