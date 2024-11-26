@@ -1,3 +1,7 @@
+import refreshIcon from "./public/refresh.svg";
+import roundedIcon from "./public/rounded-x.svg";
+import pencilIcon from "./public/pencil.svg";
+
 if (typeof navigator.serviceWorker !== "undefined") {
   navigator.serviceWorker
     .register("/sw.js")
@@ -10,7 +14,7 @@ const setPasswordModalContent = (header, url, login, password) => `
   <div class="modal__header">
     <h1 class="modal__title">${header}</h1>
     <button id="close-modal" class="password-item__button">
-      <img src="public/rounded-x.svg" alt="close" />
+      <img src="${roundedIcon}" />
     </button>
   </div>
   <div>
@@ -28,7 +32,7 @@ const setPasswordModalContent = (header, url, login, password) => `
         <div class="row">
           <input id="password-input" name="password" value="${password ?? ""}"/>
           <button type="button" class="header__button_desktop password_button" id="generate-password">
-            <img src="public/refresh.svg" alt="edit password" />
+            <img src="${refreshIcon}" />
           </button>
         </div>
       </div>
@@ -47,7 +51,7 @@ const setCardPasswordTemplate = (number, link, login, password) => `
     <p class="password-item__element">${login}</p>
     <p class="password-item__element">${password}</p>
     <button id="password-item-button-${number}" class="password-item__button">
-      <img src="public/pencil.svg" alt="edit password" />
+      <img src="${pencilIcon}" />
     </button>
   </div>`;
 
