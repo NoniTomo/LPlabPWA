@@ -171,12 +171,9 @@ renderPasswords();
 
 let deferredPrompt;
 const addBtn = document.querySelector("#add-button");
-console.log(addBtn);
 
 window.addEventListener("beforeinstallprompt", (e) => {
   e.preventDefault();
-
-  console.log(addBtn);
 
   deferredPrompt = e;
   addBtn.style.display = "block";
@@ -197,8 +194,13 @@ window.addEventListener("beforeinstallprompt", (e) => {
   });
 });
 
-const addNewPassword = document.querySelector("#add-passwor-button");
+const addNewPassword1 = document.querySelector("#add-passwor-button-1");
+const addNewPassword2 = document.querySelector("#add-passwor-button-2");
 
-addNewPassword.addEventListener("click", (e) => {
+addNewPassword1.addEventListener("click", (e) => {
+  openModal("Добавить новый пароль");
+});
+
+addNewPassword2.addEventListener("click", (e) => {
   openModal("Добавить новый пароль");
 });
