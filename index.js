@@ -1,6 +1,7 @@
 import refreshIcon from "./public/refresh.svg";
 import roundedIcon from "./public/rounded-x.svg";
 import pencilIcon from "./public/pencil.svg";
+import "./sw.js";
 
 if (typeof navigator.serviceWorker !== "undefined") {
   navigator.serviceWorker
