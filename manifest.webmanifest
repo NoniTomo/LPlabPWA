@@ -10,7 +10,7 @@
     {
       "src": "/key.svg",
       "sizes": "240x240",
-      "type": "image/png"
+      "type": "image/svg+xml"
     }
   ]
 }
