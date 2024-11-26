@@ -8,7 +8,7 @@
   "background_color": "#060a30",
   "icons": [
     {
-      "src": "public/key.svg",
+      "src": "/key.svg",
       "sizes": "240x240",
       "type": "image/png"
     }
