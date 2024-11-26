@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Signika:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Менеджер паролей <span>PWA</span></h1>
+      <button
+        id="add-passwor-button"
+        class="header__button header__button_desktop"
+      >
+        Новый пароль
+      </button>
+      <button
+        id="addPassworButton"
+        class="header__button header__button_mobile"
+      >
+        <img src="public/plus.svg" alt="add new password" />
+      </button>
+      <button id="add-button" class="header__button header__button_desktop">
+        Установить PWA
+      </button>
+    </header>
+    <main class="main">
+      <div class="password-item password-item__header">
+        <div></div>
+        <h6 class="password-list__title">URL</h6>
+        <h6 class="password-list__title">Логин</h6>
+        <h6 class="password-list__title">Пароль</h6>
+      </div>
+      <div class="password-list"></div>
+      <div id="password-modal" class="modal">
+        <div id="password-modal-content" class="modal__content"></div>
+      </div>
+    </main>
+  </body>
+</html>

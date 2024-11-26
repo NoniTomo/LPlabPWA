@@ -1,0 +1,16 @@
+{
+  "name": "Password manager PWA",
+  "short_name": "PassMan",
+  "description": "Надежный (хотя кто знает) менеджер паролей",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#060a30",
+  "background_color": "#060a30",
+  "icons": [
+    {
+      "src": "public/key.svg",
+      "sizes": "240x240",
+      "type": "image/png"
+    }
+  ]
+}

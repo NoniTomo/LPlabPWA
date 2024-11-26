@@ -1,0 +1,194 @@
+@import url("./reset.css");
+
+* {
+  font-family: "Inter", "sans-serid";
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(#060a30, #353358 70%);
+  z-index: 10;
+}
+
+.header__title {
+  font-size: 20px;
+  color: azure;
+}
+
+.header__button {
+  color: azure;
+  border: none;
+}
+
+.header__button_desktop {
+  display: none;
+}
+
+.header__button_mobile {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #595b82;
+}
+
+.header__button_desktop:hover,
+.header__button_mobile:hover {
+  background-color: rgb(74, 76, 107);
+}
+
+@media (width > 600px) {
+  .header__button_desktop {
+    background-color: #595b82;
+    display: flex;
+    padding-block: 0.5rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+  }
+
+  .header__button_mobile {
+    display: none;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: #353358;
+  padding: 20px;
+  padding-top: 5.5rem;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.password-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.password-item {
+  border-radius: 20px;
+  display: grid;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  grid-template-columns: 2rem repeat(3, 1fr) 2rem;
+  column-gap: 10px;
+  align-items: center;
+  min-width: 600px;
+}
+
+.password-item__element {
+  color: azure;
+  font-size: 14px;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.password-list__title {
+  color: azure;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.password-item__link {
+  cursor: pointer;
+}
+
+.password-item__link:hover {
+  text-decoration: underline;
+}
+
+.password-item__button {
+  background: none;
+  filter: invert(99%) sepia(77%) saturate(0%) hue-rotate(219deg)
+    brightness(109%) contrast(100%);
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-item__button:hover {
+  filter: invert(60%) sepia(5%) saturate(2136%) hue-rotate(199deg)
+    brightness(99%) contrast(83%);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(89, 91, 130, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal__content {
+  position: relative;
+  max-width: 50%;
+  height: max-content;
+  background-color: #353358;
+  padding: 20px;
+  padding-top: 40px;
+  border-radius: 20px;
+}
+
+.modal__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__text-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.password_button {
+  padding: 0;
+}
